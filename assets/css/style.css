@@ -1,0 +1,74 @@
+body {
+    font-family: "Blinker", Arial, Helvetica, sans-serif;
+    background-image: url(../images/swordfish_ii.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#title {
+    text-align: center;
+    font-size: xx-large;
+    color: #bd2c22;
+    text-shadow: 1px -1px whitesmoke;
+}
+
+#bebop-title {
+    margin-top: 0%;
+}
+
+#j-title img {
+    height: 60px;
+}
+
+
+#select-fighter {
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+}
+
+#select-cpu-fighter {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#user-character,
+#cpu-opponent {
+    width: 100%;
+    height: 200px;
+    visibility: hidden;
+}
+
+
+
+#select-your-fighter,
+#your-character,
+#choose-opponent,
+#battle-opponent {
+    color: #3e374a;
+    text-shadow: 1px -1px whitesmoke;
+}
+
+#select-fighter img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+#select-cpu-fighter img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+#user-fighter-data,
+#cpu-fighter-data {
+    color: whitesmoke;
+}
+
+
+
+
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/javascript/star_wars_game.js"></script>
+    <title>Cowboy Bebop Battle</title>
+</head>
+
+<body>
+
+
+    <div id="title">
+        <h1 id="bebop-title"> <span id="j-title"> <img src="./assets/images/japanese_title.png" alt=""> </span> RPG</h1>
+    </div>
+
+    <!--Display images for user fighter options-->
+    <div id="select-fighter">
+        <h1 id="select-user-header">
+            Select Your Fighter
+        </h1>
+        <div class="row" id="attack-button">
+            <span id="attack-button"><button type="button" class="btn btn-danger">Attack!</button></span>
+        </div>
+        <div class="row" id="select-fighter-row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <img src="./assets/images/vicious.jpg" alt="Vicious" id="user-vicious-img">
+            </div>
+            <div class="col-md-2">
+                <img src="./assets/images/vincent-volaju.jpg" alt="Vincent" id="user-vincent-img">
+            </div>
+            <div class="col-md-2">
+                <img src="./assets/images/spike.jpg" alt="Spike" id="user-spike-img">
+            </div>
+            <div class="col-md-2">
+                <img src="./assets/images/appeldelhi.jpg" alt="Appeldelhi" id="user-appeldelhi-img">
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+
+    <!--Buttons when clicked store variable for user fighter-->
+    <div id="fighter-buttons">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-secondary fighter" value="vicious">Vicious</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-secondary fighter" value="vincent">Vincent</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-secondary fighter" value="spike">Spike</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-secondary fighter" value="appeldelhi">Appeldelhi</button>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <!--User character name and hit points when fighting-->
+    <div id="user-fighter-data">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <span id="user-vicious-name">Vicious &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+                <span id="user-vicious-hp"> </span>
+            </div>
+            <div class="col-md-2">
+                <span id="user-vincent-name">Vincent &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span id="user-vincent-hp"> </span>
+            </div>
+            <div class="col-md-2">
+                <span id="user-spike-name">Spike &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span id="user-spike-hp"> </span>
+            </div>
+            <div class="col-md-2">
+                <span id="user-appeldelhi-name">Appedldelhi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span id="user-appeldelhi-hp"> </span>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <!--Display images for CPU figher options-->
+    <div id="select-cpu-fighter">
+        <h1 id="select-cpu-header">Select Your Opponent</h1>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <img src="./assets/images/opponent-vicious.jpg" alt="Opponent Vicious" id="cpu-vicious-img">
+            </div>
+            <div class="col-md-2">
+                <img src="./assets/images/opponent-vincent.jpg" alt="Opponent Vincent" id="cpu-vincent-img">
+            </div>
+            <div class="col-md-2">
+                <img src="./assets/images/opponent-spike.jpeg" alt="Opponent Spike" id="cpu-spike-img">
+            </div>
+            <div class="col-md-2">
+                <img src="./assets/images/opponent-appeldelhi.jpg" alt="Opponent Appeldelhi" id="cpu-appeldelhi-img">
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <!--Buttons when clicked store variable for cpu fighter-->
+    <div id="cpu-fighter-buttons">
+        <div class="row">
+
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-secondary cpu-fighter" id="cpu-vicious-btn"
+                    value="vicious">Vicious</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-secondary cpu-fighter" id="cpu-vincent-btn"
+                    value="vincent">Vincent</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-secondary cpu-fighter" id="cpu-spike-btn"
+                    value="spike">Spike</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-secondary cpu-fighter" id="cpu-appeldelhi-btn"
+                    value="appeldelhi">Appeldelhi</button>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <!--CPU Character name and hit points when fighting-->
+    <div id="cpu-fighter-data">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <span id="cpu-vicious-name">Vicious &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span id="cpu-vicious-hp"> </span>
+            </div>
+            <div class="col-md-2">
+                <span id="cpu-vincent-name">Vincent &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span id="cpu-vincent-hp"> </span>
+            </div>
+            <div class="col-md-2">
+                <span id="cpu-spike-name">Spike &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span id="cpu-spike-hp"> </span>
+            </div>
+            <div class="col-md-2">
+                <span id="cpu-appeldelhi-name">Appeldelhi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span id="cpu-appeldelhi-hp"> </span>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
